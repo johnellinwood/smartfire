@@ -145,7 +145,7 @@ using the second command word as its input, and with values of C=0 and D=0b0111.
 related to the serial number or could otherwise be unique for each device.
 
 #### Packet Diagram
-<code>
+```
         Bit
         1   2   3   4   5   6   7   8   9  10  11  12  13
 Word |----------------------------------------------------|
@@ -163,7 +163,7 @@ Word |----------------------------------------------------|
      |----------------------------------------------------|
    7 | S | 1 |      Ecc       |      ECC      | 0 |Par| 1 | Error Detection Word 2
      |----------------------------------------------------|
-</code>
+```
 
 #### Packet Examples
 Here is an example of a received packet and what command it represents.
