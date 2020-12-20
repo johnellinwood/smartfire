@@ -2,7 +2,7 @@
 
 ## Overview
 The Sit Group's Proflame 2 control system is used in most modern natural gas and propane indoor residential fireplaces,
-like Jotul, Mendota, Regency, Lennox, and otehrs. It uses 
+like Jotul, Mendota, Regency, Empire, Lennox, and others. It uses 
 radio frequency transmission to remotely control the fireplace by way of a handheld transmitter and a fixed receiver 
 inside the fireplace. This application provides a software implementation of the encoding necessary to transmit
 compatible commands using generic radio interfaces. A python API, command line interface, and REST server
