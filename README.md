@@ -113,17 +113,17 @@ the fireplace. One valid serial number is the the data + padding portions of the
 '0b011110100', '0b000000100'.
 
 #### Command Words
-The data portion of the first command word is made up of 1 bit for the pilot light, 3 bit-endian bits for the light 
+The data portion of the first command word is made up of 1 bit for the pilot light, 3 big-endian bits for the light 
 level, 2 zeros, 1 bit for the thermostat setting and 1 bit for the unit's main power. The second command word is made 
 up of 1 bit for the front flame / flame split, 3 big-endian bits for the fan blower level, 1 bit for the auxiliary power
-outlet, and 3 bit-endian bits for the main flame level. For each single bit variable in the command, a 0 represents off 
+outlet, and 3 big-endian bits for the main flame level. For each single bit variable in the command, a 0 represents off 
 and a 1 represents on. In the case of the pilot, that means 1 is CPI and 0 is IPI. For the thermostat, that means 1 is 
 either on or the smart thermostat. The 3 bit numbers are the level between 0 and 6, where 0 is off and 6 is high. 7 is 
 not an allowed value.
 
 #### Error Detection Words
 The first error detection word is calculated from the first command word, and the second error detection word is 
-calculated from the first command word. For the purposes of calculating the error detection words, both the command 
+calculated from the second command word. For the purposes of calculating the error detection words, both the command 
 words and the error detection words can be viewed as two 4-bit nibbles. Each 4-bit nibble of an error detection word
 is calculated using a function based on the two 4-bit nibbles of its corresponding command word.  
 
