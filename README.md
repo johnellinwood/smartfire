@@ -63,7 +63,7 @@ Future plans are to include support for the Particle Photon controlling a TI CC1
 ## Implementation
 
 ### Specification
-There is no publically available specification for the Proflame 2 protocol. Its usage is described most thoroughly in FCC ID T99058402300
+There is no publically available specification for the Proflame 2 protocol. Its usage is described most thoroughly in [FCC ID T99058402300](https://fcc.report/FCC-ID/T99058402300)
 
 ### RF Modulation and Encoding Protocols
 The Proflame 2 system uses a proprietary packet structure and encoding. Commands are sent to the receiver in a single
