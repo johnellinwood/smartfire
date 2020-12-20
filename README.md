@@ -1,14 +1,16 @@
 # SmartFire: The Smart Home Fireplace Controller
 
 ## Overview
-The Proflame 2 control system is used in most modern natural gas and propane indoor residential fireplaces. It uses 
+The Sit Group's Proflame 2 control system is used in most modern natural gas and propane indoor residential fireplaces,
+like Jotul, Mendota, Regency, Lennox, and otehrs. It uses 
 radio frequency transmission to remotely control the fireplace by way of a handheld transmitter and a fixed receiver 
 inside the fireplace. This application provides a software implementation of the encoding necessary to transmit
 compatible commands using generic radio interfaces. A python API, command line interface, and REST server
 are included for local control over the fireplace. Additionally, an Amazon Lambda project is included for Alexa
 SmartHome control of the fireplace. This controller is able to remotely control the device's main power, auxiliary 
-power supply, pilot light, thermostat setting, 6-level fan, 6-level light, and 6-level main flame. The code is
-compatible with TI CC1111 chipsets, like the YardStick One. Supported devices are Raspbery Pi, with future planned
+power supply, pilot light, thermostat setting, 6-level fan, 6-level light, and 6-level main flame. The project requires
+a linux computer and an RF transmitter. Compatible RF transmitters are ones with TI CC1111 chipsets, like the YardStick One. 
+Supported computer devices are the Raspbery Pi, with future planned
 support for Particle Photon. Thermostat setting is not yet supported, as it requires additional hardware. 
 
 ## Alexa Commands
