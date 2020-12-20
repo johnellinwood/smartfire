@@ -15,12 +15,12 @@ support for Particle Photon. Thermostat setting is not yet supported, as it requ
 
 All the fireplace components respond to on/off:
 
-* "Alexa, turn <on|off> the <fireplace/front flame/fan/light/auxiliary/pilot>"
+* "Alexa, turn <on|off> the <fireplace|front flame|fan|light|auxiliary|pilot>"
 
 The 6-level components respond to level commands:
 
-* "Alexa, set the <fireplace/fan/light> to <0-100> percent"
-* "Alexa, set the <fireplace/fan/light> to <low/high>"
+* "Alexa, set the <fireplace|fan|light> to <0-100> percent"
+* "Alexa, set the <fireplace|fan|light> to <low|high>"
 
 You may want to rename the fireplace Alexa devices on your network to avoid conflicts. Consider changing the "Light" to 
 "Fireplace Light", for example.
