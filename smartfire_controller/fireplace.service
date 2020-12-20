@@ -1,0 +1,12 @@
+[Unit]
+Description=Fireplace Controller
+After=multi-user.target
+Conflicts=getty@tty1.service
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /home/pi/fireplace/server.py
+StandardInput=tty-force
+
+[Install]
+WantedBy=multi-user.target

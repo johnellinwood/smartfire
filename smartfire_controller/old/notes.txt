@@ -1,0 +1,6 @@
+Center Frequency 314,958,300 Hz
+Bandwidth 8 KHz
+
+
+try this to reset the usb hub if there are timeouts
+sudo uhubctl -a cycle -p 4

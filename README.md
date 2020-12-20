@@ -8,7 +8,22 @@ compatible commands using generic radio interfaces. A python API, command line i
 are included for local control over the fireplace. Additionally, an Amazon Lambda project is included for Alexa
 SmartHome control of the fireplace. This controller is able to remotely control the device's main power, auxiliary 
 power supply, pilot light, thermostat setting, 6-level fan, 6-level light, and 6-level main flame. The code is
-compatible with TI CC1111 chipsets, like the YardStick One.
+compatible with TI CC1111 chipsets, like the YardStick One. Supported devices are Raspbery Pi, with future planned
+support for Particle Photon. Thermostat setting is not yet supported, as it requires additional hardware. 
+
+## Alexa Commands
+
+All the fireplace components respond to on/off:
+
+* "Alexa, turn <on|off> the <fireplace/front flame/fan/light/auxiliary/pilot>"
+
+The 6-level components respond to level commands:
+
+* "Alexa, set the <fireplace/fan/light> to <0-100> percent"
+* "Alexa, set the <fireplace/fan/light> to <low/high>"
+
+You may want to rename the fireplace Alexa devices on your network to avoid conflicts. Consider changing the "Light" to 
+"Fireplace Light", for example.
 
 ## Getting Started
 
