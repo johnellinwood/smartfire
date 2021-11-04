@@ -35,14 +35,14 @@ You may want to rename the fireplace Alexa devices on your network to avoid conf
 
 ### Installation
 * Install fireplace.service in systemd on local raspberry pi near fireplace
-** Start with 'systemctl start fireplace'
-** Fireplace server will start listening with REST interface on port 5000
-** Configure network to forward requests. e.g., port 1234 forwards to pi port 5000
+  * Start with 'systemctl start fireplace'
+  * Fireplace server will start listening with REST interface on port 5000
+  * Configure network to forward requests. e.g., port 1234 forwards to pi port 5000
 * AWS Setup
-** Setup amazon lambda function with the 'alexa_smart_home' code
-** Set a lambda environment variable called 'BASE_URL' with value http://<host>:<nat-port>, e.g. 'http://173.67.100.100:1234'
-** Setup an 'alex smarthome trigger' in lambda to call the fireplace function
-** Now 'alexa, turn on the fireplace' should call the rest call on the pi and send the rf to turn on the fireplace
+  * Setup amazon lambda function with the 'alexa_smart_home' code
+  * Set a lambda environment variable called 'BASE_URL' with value http://<host>:<nat-port>, e.g. 'http://173.67.100.100:1234'
+  * Setup an 'alex smarthome trigger' in lambda to call the fireplace function
+  * Now 'alexa, turn on the fireplace' should call the rest call on the pi and send the rf to turn on the fireplace
 
 ### Hardware Setup
 * From amazon, "NooElec Aluminum Enclosure & EMI Shield, Black, for Great Scott Gadgets Ubertooth One & Yard Stick One"
