@@ -9,7 +9,7 @@ compatible commands using generic radio interfaces. A python API, command line i
 are included for local control over the fireplace. Additionally, an Amazon Lambda project is included for Alexa
 SmartHome control of the fireplace. This controller is able to remotely control the device's main power, auxiliary 
 power supply, pilot light, thermostat setting, 6-level fan, 6-level light, and 6-level main flame. The project requires
-a linux computer and an RF transmitter. Compatible RF transmitters are ones with TI CC1111 chipsets, like the YardStick One. 
+a linux computer and an RF transmitter. Compatible RF transmitters are ones with TI CC1101 chipsets, like the YardStick One. 
 Supported computer devices are the Raspbery Pi, with future planned
 support for Particle Photon. Thermostat setting is not yet supported, as it requires additional hardware. 
 
