@@ -136,11 +136,11 @@ Let:
 * B represent the low nibble of the command word
 * C and D represent constants
 * X represent the high nibble of the error detection word
-* Z represent the low nibble of the error detection word
+* Y represent the low nibble of the error detection word
 
 Then:
-* X = ( C ^ ( x << 1 ) ^  x  ^ ( y << 1 ) ) & 0xF
-* Y = ( D ^ x ^ y )
+* X = ( C ^ ( A << 1 ) ^  A  ^ ( B << 1 ) ) & 0xF
+* Y = ( D ^ A ^ B )
 
 For the first error detection word, C=0b1101 and D=0. The second error detection word is calculated the same way, but
 using the second command word as its input, and with values of C=0 and D=0b0111. The constants C and D are possibly
